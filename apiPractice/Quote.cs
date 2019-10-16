@@ -26,7 +26,7 @@ namespace apiPractice
 
         public override string ToString()
         {
-            return $"\"{QuoteText.Trim()}\" -{QuoteAuthor}\n";
+            return $"\"{QuoteText.Trim()}\" by {QuoteAuthor}\n";
         }
     }
 }
