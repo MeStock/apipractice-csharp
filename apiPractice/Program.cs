@@ -39,7 +39,7 @@ namespace apiPractice
                   text + "</voice></speak>";
 
 
-            using (var client = new HttpClient())
+            using (client)
             {
                 using (var request = new HttpRequestMessage())
                 {
@@ -74,9 +74,11 @@ namespace apiPractice
                         }
                     }
                 }
+
+                string workingDirectory = @$"{Environment.CurrentDirectory}\sample.wav";
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(workingDirectory);
+                player.PlaySync();
             }
         }
-
-
     }
 }
