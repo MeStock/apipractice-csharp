@@ -409,6 +409,8 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
+*launchSettings.json
+
 # OpenCover UI analysis results
 OpenCover/
 
